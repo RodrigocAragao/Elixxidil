@@ -41,6 +41,16 @@
             const headerContainer = document.querySelector('.header-container');
             headerContainer.classList.toggle('active');
         }
+        // Fechar o menu ao clicar fora dele
+        document.addEventListener('click', function(event) {
+        const headerContainer = document.querySelector('.header-container');
+        const menuIcon = document.querySelector('.menu-icon');
+    
+        // Se o clique for fora do header-container e não for no menu icon, fechar o menu
+        if (!headerContainer.contains(event.target) && !menuIcon.contains(event.target)) {
+        headerContainer.classList.remove('active');
+    }
+});
     </script>
     <main>
         <!-- Primeira Secção -->
