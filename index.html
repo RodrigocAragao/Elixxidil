@@ -8,198 +8,142 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+    <body>
 
-    <div class="cta-revendedor-fixo">
-        <a href="https://www.priime.com.br/clinical" target="_blank">
-            <button>Comprar</button>
-        </a>
-    </div>
-
-    <header>
-        <div class="header-container">
-            <div class="header-logo">
-                Elixxidil
-            </div>
-            <div class="menu-icon" onclick="toggleMenu()">
-                &#9776; 
-            </div>
-            <nav class="header-cta-group">
-                <button onclick="document.querySelector('.section-three').scrollIntoView({ behavior: 'smooth' });">Home</button>
-                <button onclick="document.querySelector('.section-with-image').scrollIntoView({ behavior: 'smooth' });">Sobre</button>
-                <button onclick="document.querySelector('.footer-container').scrollIntoView({ behavior: 'smooth' });">Contato</button>
-            </nav>
-            <div class="header-cta-right">
-                <a href="https://api.whatsapp.com/send?phone=+5562999678080&text=Olá, gostaria de saber mais sobre como ser um revendedor!" target="_blank">
-                    <button>Seja Revendedor</button>
-                </a>
-            </div>
+        <div class="cta-revendedor-fixo">
+            <a href="https://www.priime.com.br/clinical" target="_blank">
+                <button>Comprar</button>
+            </a>
         </div>
-    </header>
-    <script>
-        function toggleMenu() {
-            const headerContainer = document.querySelector('.header-container');
-            headerContainer.classList.toggle('active');
-        }
-        // Fechar o menu ao clicar fora dele
-        document.addEventListener('click', function(event) {
-        const headerContainer = document.querySelector('.header-container');
-        const menuIcon = document.querySelector('.menu-icon');
-    
-        // Se o clique for fora do header-container e não for no menu icon, fechar o menu
-        if (!headerContainer.contains(event.target) && !menuIcon.contains(event.target)) {
-        headerContainer.classList.remove('active');
-    }
-});
-    </script>
-    <main>
-        <!-- Primeira Secção -->
-        <section class="section-one">
-            <div class="text-content">
-                <h1>Elixxidil</h1>
-                <p>
-                    Spray dual action
-                </p>
+
+        <header>
+            <div class="header-container">
+                <div class="header-logo">
+                    Elixxidil
+                </div>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    &#9776; 
+                </div>
+                <nav class="header-cta-group">
+                    <button onclick="document.querySelector('.section-three').scrollIntoView({ behavior: 'smooth' });">Home</button>
+                    <button onclick="document.querySelector('.section-with-image').scrollIntoView({ behavior: 'smooth' });">Sobre</button>
+                    <button onclick="document.querySelector('.footer-container').scrollIntoView({ behavior: 'smooth' });">Contato</button>
+                </nav>
+                <div class="header-cta-right">
+                    <a href="https://api.whatsapp.com/send?phone=+5562999678080&text=Olá, gostaria de saber mais sobre como ser um revendedor!" target="_blank">
+                        <button>Seja Revendedor</button>
+                    </a>
+                </div>
             </div>
-        </section>
+        </header>
+        
 
-        <!-- Terceira Secção -->
-        <section class="section-three">
-            <img src="ELIXXIDIL_SITE-removebg-preview.png" alt="Imagem Grande">
-            <div class="text-content">
-                <h2>ELIXXIDIL - Spray dual action</h2>
-                <br>
-                <p>O Elixxidil é um tratamento inovador desenvolvido para combater a queda de cabelo e estimular o crescimento capilar, atuando diretamente nos folículos enfraquecidos.
-                    A sua fórmula avançada é enriquecida com peptídeos sinalizadores derivados de plantas, que desempenham um papel crucial na revitalização dos cabelos.</p>
-                <br>
-                <button class="cta-buy">Comprar</button>
-            </div>
-        </section>
+        <main>
+            <!-- Primeira Secção -->
+            <section class="section-one">
+                <div class="text-content">
+                    <h1>Elixxidil</h1>
+                    <p>
+                        Spray dual action
+                    </p>
+                </div>
+            </section>
 
-        <!-- Secção com 4 Blocos -->
-        <section class="four-blocks">
-            <div class="block"><strong>Estimula o Crescimento Capilar:</strong> A fórmula do Elixxidil ativa e nutre os folículos capilares, promovendo o crescimento saudável do cabelo e reduzindo a queda progressiva.</div>
-            <div class="block"><strong>Peptídeos Sinalizadores:</strong> Graças à presença de peptídeos obtidos da Curcuma longa, o produto reinicia a atividade folicular, restaurando a vitalidade dos fios.</div>
-            <div class="block"><strong>Blend Nutritivo:</strong> Um conjunto de nutrientes essenciais que reforçam a saúde do couro cabeludo e dos folículos capilares, promovendo cabelos mais fortes e volumosos.</div>
-        </section>
+            <!-- Terceira Secção -->
+            <section class="section-three">
+                <img src="ELIXXIDIL_SITE-removebg-preview.png" alt="Imagem Grande">
+                <div class="text-content">
+                    <h2>ELIXXIDIL - Spray dual action</h2>
+                    <br>
+                    <p>O Elixxidil é um tratamento inovador desenvolvido para combater a queda de cabelo e estimular o crescimento capilar, atuando diretamente nos folículos enfraquecidos.
+                        A sua fórmula avançada é enriquecida com peptídeos sinalizadores derivados de plantas, que desempenham um papel crucial na revitalização dos cabelos.</p>
+                    <br>
+                    <button class="cta-buy">Comprar</button>
+                </div>
+            </section>
 
-            <!-- Secção com imagem e títulos com descrição -->
-        <section class="section-with-image">
-            <div class="text-content">
-                <h2>fórmula avançada</h2>
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <div class="accordion-title" data-image="grafico_capilia_longa.jpg">
-                            <h3>Capilia Longa®</h3>
-                            <span class="arrow">&#9660;</span>
-                        </div>
-                        <div class="accordion-description">
-                            <p>A Capilia Longa® age nos fatores chaves para o crescimento adequado do 
-                                bulbo capilar e equilíbrio do ciclo de crescimento do cabelo</p>
-                        </div>
-                    </div>
+            <!-- Secção com 4 Blocos -->
+            <section class="four-blocks">
+                <div class="block"><strong>Estimula o Crescimento Capilar:</strong> A fórmula do Elixxidil ativa e nutre os folículos capilares, promovendo o crescimento saudável do cabelo e reduzindo a queda progressiva.</div>
+                <div class="block"><strong>Peptídeos Sinalizadores:</strong> Graças à presença de peptídeos obtidos da Curcuma longa, o produto reinicia a atividade folicular, restaurando a vitalidade dos fios.</div>
+                <div class="block"><strong>Blend Nutritivo:</strong> Um conjunto de nutrientes essenciais que reforçam a saúde do couro cabeludo e dos folículos capilares, promovendo cabelos mais fortes e volumosos.</div>
+            </section>
 
-                    <div class="accordion-item">
-                        <div class="accordion-title" data-image="elaya_renova.png">
-                            <h3>Elaya Renova™</h3>
-                            <span class="arrow">&#9660;</span>
+                <!-- Secção com imagem e títulos com descrição -->
+            <section class="section-with-image">
+                <div class="text-content">
+                    <h2>fórmula avançada</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-title" data-image="grafico_capilia_longa.jpg">
+                                <h3>Capilia Longa®</h3>
+                                <span class="arrow">&#9660;</span>
+                            </div>
+                            <div class="accordion-description">
+                                <p>A Capilia Longa® age nos fatores chaves para o crescimento adequado do 
+                                    bulbo capilar e equilíbrio do ciclo de crescimento do cabelo</p>
+                            </div>
                         </div>
-                        <div class="accordion-description">
-                            <p>Elaya Renova™ é um complexo rico em proteínas, lipídios e oligoelementos. 
-                                Essas substâncias são encapsuladas em ciclodextrina, o que aumenta a adesão e penetração das mesmas no couro 
-                                cabeludo, bulbo e haste, fortalecendo e contribuindo para a hidratação e regeneração dessas estruturas. Desse 
-                                modo, o ativo contribui para o equilíbrio de todo o complexo capilar</p>
-                        </div>
-                    </div>
 
-                    <div class="accordion-item">
-                        <div class="accordion-title" data-image="elayaGrafico.png">
-                            <h3>Nano cafeína</h3>
-                            <span class="arrow">&#9660;</span>
+                        <div class="accordion-item">
+                            <div class="accordion-title" data-image="elaya_renova.png">
+                                <h3>Elaya Renova™</h3>
+                                <span class="arrow">&#9660;</span>
+                            </div>
+                            <div class="accordion-description">
+                                <p>Elaya Renova™ é um complexo rico em proteínas, lipídios e oligoelementos. 
+                                    Essas substâncias são encapsuladas em ciclodextrina, o que aumenta a adesão e penetração das mesmas no couro 
+                                    cabeludo, bulbo e haste, fortalecendo e contribuindo para a hidratação e regeneração dessas estruturas. Desse 
+                                    modo, o ativo contribui para o equilíbrio de todo o complexo capilar</p>
+                            </div>
                         </div>
-                        <div class="accordion-description">
-                            <p>A nano cafeína possui propriedades que podem auxiliar no combate à calvície e estimular o crescimento capilar.
-                                A sua ação se dá através da inibição da atividade da enzima 5 α-redutase, que é responsável pela conversão da 
-                                testosterona em di-hidrotestosterona (DHT), um hormônio associado à queda de cabelo.</p>
+
+                        <div class="accordion-item">
+                            <div class="accordion-title" data-image="elayaGrafico.png">
+                                <h3>Nano cafeína</h3>
+                                <span class="arrow">&#9660;</span>
+                            </div>
+                            <div class="accordion-description">
+                                <p>A nano cafeína possui propriedades que podem auxiliar no combate à calvície e estimular o crescimento capilar.
+                                    A sua ação se dá através da inibição da atividade da enzima 5 α-redutase, que é responsável pela conversão da 
+                                    testosterona em di-hidrotestosterona (DHT), um hormônio associado à queda de cabelo.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="image-content">
-                <img id="accordion-image" src="antes&depois.jpg" alt="Imagem padrão">
-            </div>
-        </section>
-    </main>
+                <div class="image-content">
+                    <img id="accordion-image" src="antes&depois.jpg" alt="Imagem padrão">
+                </div>
+            </section>
+        </main>
 
-    <footer>
-        <div id="footer-container" class="footer-container">
-            <!-- Seção Sobre -->
-            <div class="footer-section about">
-                <h2>Sobre Nós</h2>
-                <p>
-                    Somos uma empresa dedicada a fornecer<br> os melhores produtos aos nossos clientes.<br>Nossa missão é entregar qualidade e satisfação.
-                </p>
+        <footer>
+            <div id="footer-container" class="footer-container">
+                <!-- Seção Sobre -->
+                <div class="footer-section about">
+                    <h2>Sobre Nós</h2>
+                    <p>
+                        Somos uma empresa dedicada a fornecer<br> os melhores produtos aos nossos clientes.<br>Nossa missão é entregar qualidade e satisfação.
+                    </p>
+                </div>
+        
+                <!-- Seção de Contato -->
+                <div class="footer-section contact">
+                    <h2>Contato</h2>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Ed. Walk Bueno Business - R. T-55, 930 -<br>St. Bueno, Goiânia - GO, 74215-170</li>
+                        <li><i class="fas fa-phone-alt"></i> (62) 99967-8080</li>
+                        <li><i class="fas fa-envelope"></i> comercial@priime.com.br</li>
+                    </ul>
+                </div>
             </div>
-    
-            <!-- Seção de Contato -->
-            <div class="footer-section contact">
-                <h2>Contato</h2>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> Ed. Walk Bueno Business - R. T-55, 930 -<br>St. Bueno, Goiânia - GO, 74215-170</li>
-                    <li><i class="fas fa-phone-alt"></i> (62) 99967-8080</li>
-                    <li><i class="fas fa-envelope"></i> comercial@priime.com.br</li>
-                </ul>
+        
+            <!-- Seção de Direitos Autorais -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 PRIIME VIDA E SAUDE LTDA. Todos os direitos reservados.</p>
             </div>
-        </div>
-    
-        <!-- Seção de Direitos Autorais -->
-        <div class="footer-bottom">
-            <p>&copy; 2024 PRIIME VIDA E SAUDE LTDA. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Seleciona todas as "accordion-title" e a imagem
-        const accordionItems = document.querySelectorAll('.accordion-item');
-        const accordionImage = document.getElementById('accordion-image');
-    
-        // Define a imagem padrão
-        const defaultImage = 'antes&depois.jpg';
-    
-        accordionItems.forEach(item => {
-            const title = item.querySelector('.accordion-title');
-    
-            title.addEventListener('click', () => {
-                // Fechar todos os outros itens
-                accordionItems.forEach(i => {
-                    if (i !== item) {
-                        i.classList.remove('active');
-                    }
-                });
-    
-                // Alternar o estado do item atual (abrir/fechar)
-                item.classList.toggle('active');
-    
-                // Verificar se há algum item ativo
-                const isAnyActive = [...accordionItems].some(i => i.classList.contains('active'));
-    
-                if (isAnyActive) {
-                    // Trocar a imagem conforme o data-image do título clicado
-                    const newImage = title.getAttribute('data-image');
-                    accordionImage.src = newImage;
-                } else {
-                    // Se nenhum item estiver ativo, voltar à imagem padrão
-                    accordionImage.src = defaultImage;
-                }
-            });
-        });
-
-        function toggleMenu() {
-            const headerContainer = document.querySelector('.header-container');
-            headerContainer.classList.toggle('active');
-        }
-    </script>
-    
-</body>
+        </footer>
+        <script src="script.js"></script>    
+    </body>
 </html>
