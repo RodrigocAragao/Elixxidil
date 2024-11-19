@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Elixxidil</title>
+    <meta name="description" content="Elixxidil é um aerossol eficaz para o controle da queda de cabelo. Fórmula avançada que fortalece o cabelo e estimula o crescimento saudável.">
+    <meta name="keywords" content="Elixxidil, minoxidil, queda de cabelo, controle de queda, aerossol capilar, crescimento capilar, tratamento capilar, fortalecimento do cabelo, saúde do couro cabeludo">
+    <meta name="author" content="Elixxidil">
+    <meta property="og:title" content="Elixxidil - Aerossol para Controle de Queda de Cabelo">
+    <meta property="og:description" content="Recupere a saúde do seu cabelo com Elixxidil. Controle a queda e promova o crescimento capilar com nossa fórmula inovadora.">
+    <meta property="og:image" content="URL_DA_IMAGEM_DO_PRODUTO">
+    <meta property="og:url" content="URL_DO_PRODUTO">
+    <meta property="og:type" content="product">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Elixxidil - Aerossol para Controle de Queda de Cabelo">
+    <meta name="twitter:description" content="Fortaleça seu cabelo e controle a queda com Elixxidil, o aerossol capilar de fórmula avançada.">
+    <meta name="twitter:image" content="URL_DA_IMAGEM_DO_PRODUTO">
+    <link rel="icon" href="URL_DO_FAVICON" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
     <body>
-
-        <div class="cta-revendedor-fixo">
-            <a href="https://www.priime.com.br/clinical" target="_blank">
-                <button>Comprar</button>
-            </a>
-        </div>
-
         <header>
             <div class="header-container">
                 <div class="header-logo">
@@ -25,9 +33,9 @@
                     &#9776; 
                 </div>
                 <nav class="header-cta-group">
-                    <button onclick="document.querySelector('.section-three').scrollIntoView({ behavior: 'smooth' });">Home</button>
-                    <button onclick="document.querySelector('.section-with-image').scrollIntoView({ behavior: 'smooth' });">Sobre</button>
-                    <button onclick="document.querySelector('.footer-container').scrollIntoView({ behavior: 'smooth' });">Contato</button>
+                    <button onclick="document.querySelector('.header-container').scrollIntoView({ behavior: 'smooth' });">Home</button>
+                    <button onclick="document.querySelector('.active-ingredients').scrollIntoView({ behavior: 'smooth' });">Sobre</button>
+                    <button onclick="document.querySelector('.footer').scrollIntoView({ behavior: 'smooth' });">Contato</button>
                 </nav>
                 <div class="header-cta-right">
                     <a href="https://api.whatsapp.com/send?phone=+5562999678080&text=Olá, gostaria de saber mais sobre como ser um revendedor!" target="_blank">
@@ -37,115 +45,375 @@
             </div>
         </header>
         
+        <a href="https://wa.me/5562999678080?text=Olá, gostaria de saber mais sobre o Elixxidil!" class="whatsapp-button" target="_blank">
+            <img src="whatsapp.png" alt="WhatsApp">
+        </a>     
 
         <main>
             <!-- Primeira Secção -->
             <section class="section-one">
-                <div class="text-content">
-                    <h1>Elixxidil</h1>
-                    <p>
-                        Spray dual action
-                    </p>
+                
+            </section>
+
+            <!--seção do produto-->
+            <section class="product-section"> 
+                <div class="text-group text-left">
+                    <div class="text-item">
+                        <h3>CRESCIMENTO ACELERADO</h3>
+                        <p>A fórmula do Elixxidil ativa e nutre os folículos capilares, promovendo o crescimento saudável do cabelo e reduzindo a queda progressiva.</p>
+                    </div>
+                    
+                    <div class="text-item">
+                        <h3>REDUÇÃO DA QUEDA</h3>
+                        <p>Para o suplemento capilar New Hair, investimos em pesquisa para reduzir a queda capilar em até 96%, garantindo fios mais fortes e saudáveis.</p>
+                    </div>
+                </div>
+            
+                <div class="image-container">
+                    <img src="Picture1.png" alt="Produto">
+                </div>
+            
+                <div class="text-group text-right">
+                    <div class="text-item">
+                        <h3>PEPTÍDEOS SINALIZADORES</h3>
+                        <p>Graças à presença de peptídeos obtidos da Curcuma longa, o produto reinicia a atividade folicular, restaurando a vitalidade dos fios.</p>
+                    </div>
+                
+                    <div class="text-item">
+                        <h3>BLEND NUTRITIVO</h3>
+                        <p>Um conjunto de nutrientes essenciais que reforçam a saúde do couro cabeludo e dos folículos capilares, promovendo cabelos mais fortes e volumosos.</p>
+                    </div>
                 </div>
             </section>
 
-            <!-- Terceira Secção -->
-            <section class="section-three">
-                <img src="ELIXXIDIL_SITE-removebg-preview.png" alt="Imagem Grande">
-                <div class="text-content">
-                    <h2>ELIXXIDIL - Spray dual action</h2>
-                    <br>
-                    <p>O Elixxidil é um tratamento inovador desenvolvido para combater a queda de cabelo e estimular o crescimento capilar, atuando diretamente nos folículos enfraquecidos.
-                        A sua fórmula avançada é enriquecida com peptídeos sinalizadores derivados de plantas, que desempenham um papel crucial na revitalização dos cabelos.</p>
-                    <br>
-                    <a href="https://www.priime.com.br/clinical/elixxidil-spray-dual-action" target="_blank">
-                    <button class="cta-buy">Comprar</button>
-                    </a>
+            <div class="botão-cta">
+                <a href="https://www.priime.com.br/clinical/elixxidil-spray-dual-action" target="_blank">
+                    <button class="cta-comprar">COMPRE AGORA</button>
+                </a>
+            </div>
+
+            <section class="active-ingredients">
+                <h2>Conheça os poderosos ativos da fórmula</h2>
+                <p>Benefícios incríveis para cabelos</p>
+            
+                <div class="ingredients-grid">
+                    <div class="ingredient-item">
+                        <h3>Capilia Longa®</h3>
+                        <p>A Capilia Longa® age nos fatores chaves para o crescimento adequado do bulbo capilar e equilíbrio do ciclo de crescimento do cabelo</p>
+                    </div>
+                    <div class="ingredient-item">
+                        <h3>Niacinamida</h3>
+                        <p>A Niacinamida, é antioxidante, além de aumentar a produção de colágeno, promovendo resistência e regularizando o crescimento de acordo com o ciclo capilar.</p>
+                    </div>
+                    <div class="ingredient-item">
+                        <h3>Nano cafeína</h3>
+                        <p>A nano cafeína possui propriedades que podem auxiliar no combate à calvície e estimular o crescimento capilar. A sua ação se dá através da inibição da atividade da enzima 5 α-redutase, que é responsável pela conversão da testosterona em di-hidrotestosterona (DHT), um hormônio associado à queda de cabelo.</p>
+                    </div>
+                    <div class="ingredient-item">
+                        <h3>Elaya Renova™</h3>
+                        <p>Elaya Renova™ é um complexo rico em proteínas, lipídios e oligoelementos. Essas substâncias são encapsuladas em ciclodextrina, o que aumenta a adesão e penetração das mesmas no couro cabeludo, bulbo e haste, fortalecendo e contribuindo para a hidratação e regeneração dessas estruturas.</p>
+                    </div>
+                    <div class="ingredient-item">
+                        <h3>Cúrcuma</h3>
+                        <p>A cúrcuma é uma especiaria de cor alaranjada que possui propriedades anti-inflamatórias, além de ter uma quantidade significante de ferro, manganês, vitamina B6, fibras e potássio.</p>
+                    </div>
+                    <div class="ingredient-item">
+                        <h3>eXT. Gengibre</h3>
+                        <p>Previne a queda capilar e a perda da coloração natural dos fios, mantendo o couro cabeludo saudável.</p>
+                    </div>
                 </div>
             </section>
 
-            <!-- Secção com 4 Blocos -->
-            <section class="four-blocks">
-                <div class="block"><strong>Estimula o Crescimento Capilar:</strong> A fórmula do Elixxidil ativa e nutre os folículos capilares, promovendo o crescimento saudável do cabelo e reduzindo a queda progressiva.</div>
-                <div class="block"><strong>Peptídeos Sinalizadores:</strong> Graças à presença de peptídeos obtidos da Curcuma longa, o produto reinicia a atividade folicular, restaurando a vitalidade dos fios.</div>
-                <div class="block"><strong>Blend Nutritivo:</strong> Um conjunto de nutrientes essenciais que reforçam a saúde do couro cabeludo e dos folículos capilares, promovendo cabelos mais fortes e volumosos.</div>
-            </section>
-
-                <!-- Secção com imagem e títulos com descrição -->
-            <section class="section-with-image">
-                <div class="text-content">
-                    <h2>fórmula avançada</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                            <div class="accordion-title" data-image="grafico_capilia_longa.jpg">
-                                <h3>Capilia Longa®</h3>
-                                <span class="arrow">&#9660;</span>
-                            </div>
-                            <div class="accordion-description">
-                                <p>A Capilia Longa® age nos fatores chaves para o crescimento adequado do 
-                                    bulbo capilar e equilíbrio do ciclo de crescimento do cabelo</p>
-                            </div>
+            <section class="comparison-section">
+                <h2>Compare e comprove: porque Elixxidil é o mais completo</h2>
+                <p>A tabela nutricional confirma, os resultados comprovam</p>
+                
+                <div class="comparison-content">
+                    <div class="features positive-features">
+                        <div class="feature-item1">
+                            <span class="check-icon">✔</span>
+                            <p>Sem efeito rebote</p>
                         </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-title" data-image="elaya_renova.png">
-                                <h3>Elaya Renova™</h3>
-                                <span class="arrow">&#9660;</span>
-                            </div>
-                            <div class="accordion-description">
-                                <p>Elaya Renova™ é um complexo rico em proteínas, lipídios e oligoelementos. 
-                                    Essas substâncias são encapsuladas em ciclodextrina, o que aumenta a adesão e penetração das mesmas no couro 
-                                    cabeludo, bulbo e haste, fortalecendo e contribuindo para a hidratação e regeneração dessas estruturas. Desse 
-                                    modo, o ativo contribui para o equilíbrio de todo o complexo capilar</p>
-                            </div>
+                        <div class="feature-item1">
+                            <span class="check-icon">✔</span>
+                            <p>Menor potencial alergenico</p>
                         </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-title" data-image="elayaGrafico.png">
-                                <h3>Nano cafeína</h3>
-                                <span class="arrow">&#9660;</span>
-                            </div>
-                            <div class="accordion-description">
-                                <p>A nano cafeína possui propriedades que podem auxiliar no combate à calvície e estimular o crescimento capilar.
-                                    A sua ação se dá através da inibição da atividade da enzima 5 α-redutase, que é responsável pela conversão da 
-                                    testosterona em di-hidrotestosterona (DHT), um hormônio associado à queda de cabelo.</p>
-                            </div>
+                        <div class="feature-item1">
+                            <span class="check-icon">✔</span>
+                            <p>Resultado em 4 semanas</p>
+                        </div>
+                        <div class="feature-item1">
+                            <span class="check-icon">✔</span>
+                            <p>eXT. de algas marinhas</p>
+                        </div>
+                        <div class="feature-item1">
+                            <span class="check-icon">✔</span>
+                            <p>Fórmula Inovadora</p>
+                        </div>
+                        <div class="feature-item1">
+                            <span class="check-icon">✔</span>
+                            <p>Aerossol</p>
+                        </div>
+                    </div>
+                    
+                    <div class="image-comparison">
+                        <img src="comparação.png" alt="New Hair">
+                    </div>
+            
+                    <div class="features negative-features">
+                        <div class="feature-item">
+                            <span class="x-icon">✘</span>
+                            <p>Possui efeito rebote</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="x-icon">✘</span>
+                            <p>Maior potêncial alergênico</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="x-icon">✘</span>
+                            <p>Escamação do couro cabeludo</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="x-icon">✘</span>
+                            <p>Deficiência nutricional</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="x-icon">✘</span>
+                            <p>Efeito shedding</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="x-icon">✘</span>
+                            <p>Líquido</p>
                         </div>
                     </div>
                 </div>
+            </section>         
 
-                <div class="image-content">
-                    <img id="accordion-image" src="antes&depois.jpg" alt="Imagem padrão">
+            <div class="botão-cta">
+                <a href="https://www.priime.com.br/clinical/elixxidil-spray-dual-action" target="_blank">
+                    <button class="cta-comprar">COMPRE AGORA</button>
+                </a>
+            </div>
+
+            <section class="testimonials-section">
+                <div class="section-header">
+                    <h2>Resultados que Você Pode Ver</h2>
+                    <p>Veja como o Elixxidil tem ajudado nossos clientes a conquistar cabelos mais fortes e saudáveis.</p>
+                </div>
+            
+                <!-- Carrossel de Depoimentos -->
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <!-- Depoimento 1 -->
+                        <div class="carousel-item">
+                            <div class="content-wrapper">
+                                <div class="image-wrapper">
+                                    <div class="image-container">
+                                        <img src="before1.png" alt="Before">
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="after1.jpg" alt="After">                                       
+                                    </div>
+                                </div>
+                                <div class="review-section">
+                                    <h3>Rodrigo A.</h3>
+                                    <p>"Meu cabelo estava começando a cair e isso estava afetando minha confiança. Estou feliz por ter encontrado algo que me ajuda a manter meu cabelo mais grosso e cheio."</p>
+                                    <small>Aplicando Elixxidil Dual Action</small>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Depoimento 2 -->
+                        <div class="carousel-item">
+                            <div class="content-wrapper">
+                                <div class="image-wrapper">
+                                    <div class="image-container">
+                                        <img src="before2.jpg" alt="Before">
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="after2.jpg" alt="After">
+                                    </div>
+                                </div>
+                                <div class="review-section">
+                                    <h3>Carlos N.</h3>
+                                    <p>"Estou muito satisfeito com o resultado. Meu cabelo está mais forte e saudável. Recomendo a todos."</p>
+                                    <small>Aplicando Elixxidil Dual Action</small>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Depoimento 3 -->
+                        <div class="carousel-item">
+                            <div class="content-wrapper">
+                                <div class="image-wrapper">
+                                    <div class="image-container">
+                                        <img src="before3.jpg" alt="Before">    
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="after3.jpg" alt="After">
+                                    </div>
+                                </div>
+                                <div class="review-section">
+                                    <h3>Julio A.</h3>
+                                    <p>"Depois de usar o suplemento, notei uma grande melhora na densidade do meu cabelo. Estou muito feliz!"</p>
+                                    <small>Aplicando Elixxidil Dual Action</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="content-wrapper">
+                                <div class="image-wrapper">
+                                    <div class="image-container">
+                                        <img src="before5.jpg" alt="Before">    
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="after5.jpg" alt="After">
+                                    </div>
+                                </div>
+                                <div class="review-section">
+                                    <h3>Julio A.</h3>
+                                    <p>"Depois de usar o suplemento, notei uma grande melhora na densidade do meu cabelo. Estou muito feliz!"</p>
+                                    <small>Aplicando Elixxidil Dual Action</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="content-wrapper">
+                                <div class="image-wrapper">
+                                    <div class="image-container">
+                                        <img src="before3.jpg" alt="Before">    
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="after3.jpg" alt="After">
+                                    </div>
+                                </div>
+                                <div class="review-section">
+                                    <h3>Julio A.</h3>
+                                    <p>"Depois de usar o suplemento, notei uma grande melhora na densidade do meu cabelo. Estou muito feliz!"</p>
+                                    <small>Aplicando Elixxidil Dual Action</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </section>
+
+            <div class="chart-container">
+                <canvas id="graficoEficacia" style="max-height: 400px;"></canvas>
+                <div class="chart-legend">
+                    <p><strong>1:</strong> Quantidade de cabelos perdidos após teste de tração positivo; <strong>2:</strong> Aparência geral dos cabelos</p>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="graficoAceitabilidade"></canvas>
+                <div class="chart-legend">
+                    <p><strong>1:</strong> Aumento na quantidade de cabelos; <strong>2:</strong> Fios mais grossos; <strong>3:</strong> Aumento no volume; <strong>4:</strong> Fortalecimento dos fios; <strong>5:</strong> Estímulo ao crescimento; <strong>6:</strong> Bom resultado; <strong>7:</strong> Compraria o produto</p>
+                </div>
+            </div>
+            
+            <section class="kits-section">
+                <h2>Encontre o melhor kit para seus cabelos</h2>
+                <p>O custo-benefício que você merece está aqui, escolha</p>
+            
+                <div class="kits-grid">
+                    <!-- Kit 1 corrigir valores-->
+                    <div class="kit-item">
+                        <h3>6 Elixxidil Dual action</h3>
+                        <p>Vitaminas para cabelos, pele e unhas + Brinde</p>
+                        <span class="discount">20% OFF</span>
+                        <img src="Elixxidil6.png" alt="6 Elixxidil">
+                        <p>Preço no PIX R$ 330,72</p>
+                        <p>ou em até 12x de <strong>R$ 36,55</strong></p>
+                        <p>* Aqui sua compra é 100% segura, compre com tranquilidade.</p>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+            
+                    <!-- Kit 2 corrigir valores-->
+                    <div class="kit-item">
+                        <h3>3 Elixxidil Dual action</h3>
+                        <p>Vitaminas para cabelos, pele e unhas</p>
+                        <span class="discount">15% OFF</span>
+                        <img src="Elixxidil3.png" alt="3 Elixxidil">
+                        <p>Preço no PIX R$ 175,69</p>
+                        <p>ou em até 12x de <strong>R$ 18,55</strong></p>
+                        <p>* Aqui sua compra é 100% segura, compre com tranquilidade.</p>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+            
+                    <!-- Kit 3 corrigir valores-->
+                    <div class="kit-item">
+                        <h3>2 Elixxidil Dual action</h3>
+                        <p>Vitaminas para cabelos, pele e unhas</p>
+                        <span class="discount">10% OFF</span>
+                        <img src="Elixxdil2.png" alt="2 Elixxidil">
+                        <p>Preço no PIX R$ 124,02</p>
+                        <p>ou em até 12x de <strong>R$ 18,55</strong></p>
+                        <p>* Aqui sua compra é 100% segura, compre com tranquilidade.</p>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
+            
+                    <!-- Kit 4 corrigir valores-->
+                    <div class="kit-item">
+                        <h3>1 Elixxidil Dual action</h3>
+                        <p>Vitaminas para cabelos, pele e unhas</p>
+                        <span class="discount">5% OFF</span>
+                        <img src="ELIXXIDIL_SITE-removebg-preview.png" alt="1 Elixxidil">
+                        <p>Preço no PIX R$ 65,45</p>
+                        <p>ou em até 2x de <strong>R$ 34,45</strong></p>
+                        <p>* Aqui sua compra é 100% segura, compre com tranquilidade.</p>
+                        <button class="buy-button">COMPRE AGORA</button>
+                    </div>
                 </div>
             </section>
         </main>
 
-        <footer>
-            <div id="footer-container" class="footer-container">
-                <!-- Seção Sobre -->
-                <div class="footer-section about">
-                    <h2>Sobre Nós</h2>
-                    <p>
-                        Somos uma empresa dedicada a fornecer<br> os melhores produtos aos nossos clientes.<br>Nossa missão é entregar qualidade e satisfação.
-                    </p>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-sections">
+                    <div class="payment-methods">
+                        <h4>Meios de pagamento</h4>
+                        <img src="mercadoPago.png" alt="Mastercard">
+                        <img src="boleto.png" alt="Boleto">
+                        <img src="pix.png" alt="Pix">
+                    </div>
+                    
+                    <div class="social-media">
+                        <h4>Siga nossas redes</h4>
+                        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/priimeoficial/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h4>Contato</h4>
+                        <p>(62) 99967-8080</p>
+                        <p>comercial@priime.com.br</p>
+                    </div>
                 </div>
+
+
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.428063720273!2d-49.27400552390217!3d-16.70547994605076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef13b207922d5%3A0x1cea981eb0ad4efe!2sEd.%20Walk%20Bueno%20Business%20-%20R.%20T-55%2C%20930%20-%20St.%20Bueno%2C%20Goi%C3%A2nia%20-%20GO%2C%2074215-170!5e0!3m2!1spt-BR!2sbr!4v1732039621632!5m2!1spt-BR!2sbr"
+                        width="100%"
+                        height="250"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
         
-                <!-- Seção de Contato -->
-                <div class="footer-section contact">
-                    <h2>Contato</h2>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Ed. Walk Bueno Business - R. T-55, 930 -<br>St. Bueno, Goiânia - GO, 74215-170</li>
-                        <li><i class="fas fa-phone-alt"></i> (62) 99967-8080</li>
-                        <li><i class="fas fa-envelope"></i> comercial@priime.com.br</li>
-                    </ul>
+                <div class="footer-bottom">
+                    <p>Copyright © PRIIME VIDA E SAÚDE LTDA. Todos os direitos reservados.</p>
+                    <p>Ed. Walk Bueno Business - R. T-55, 930 - St. Bueno, Goiânia - GO, 74215-170</p>
+                    <p>CNPJ: 44.336.526/0002-01</p>
                 </div>
-            </div>
-        
-            <!-- Seção de Direitos Autorais -->
-            <div class="footer-bottom">
-                <p>&copy; 2024 PRIIME VIDA E SAUDE LTDA. Todos os direitos reservados.</p>
             </div>
         </footer>
-        <script src="script.js"></script>    
+        <script src="script.js"></script>   
     </body>
 </html>
